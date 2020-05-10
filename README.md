@@ -1,4 +1,4 @@
-# pwApk
+# PWApk
 A PoC of a PWA being published on the Play Store.
 
 
