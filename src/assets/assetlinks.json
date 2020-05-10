@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.bomkmi",
+      "sha256_cert_fingerprints": ["A3:98:F2:B6:FC:73:7D:A1:37:09:BE:7D:D1:1A:9C:65:A9:41:5B:0D:94:6A:18:6F:10:CB:D7:3A:D8:BE:C4:94"]
+    }
+  }
+]

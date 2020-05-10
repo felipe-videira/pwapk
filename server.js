@@ -3,13 +3,14 @@ const path = require('path');
 
 const app = express();
 
-// Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/pwApk'));
 
-app.get('/*', function(req,res) {
-    
-res.sendFile(path.join(__dirname+'/dist/pwApk/index.html'));
+app.get('/.well-known/assetlinks.json', (req, res) => {
+    res.sendFile(path.join(__dirname+'/dist/pwApk/assets/assetlinks.json'));
 });
 
-// Start the app by listening on the default Heroku port
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/dist/pwApk/index.html'));
+});
+
 app.listen(process.env.PORT || 8080);
