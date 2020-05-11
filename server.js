@@ -5,6 +5,10 @@ const app = express();
 
 app.use(express.static(__dirname + '/dist/pwApk'));
 
+app.get('/privacy', (req, res) => {
+    res.sendFile(path.join(__dirname+'/dist/pwApk/assets/privacy.html'));
+});
+
 app.get('/.well-known/assetlinks.json', (req, res) => {
     res.sendFile(path.join(__dirname+'/dist/pwApk/assets/assetlinks.json'));
 });
