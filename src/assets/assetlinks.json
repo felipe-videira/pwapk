@@ -1,10 +1,14 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
-      "package_name": "xyz.appmaker.squntp",
-      "sha256_cert_fingerprints": ["61:23:F3:83:57:3A:79:DA:6E:B6:89:4A:4C:CC:69:32:D2:4C:75:99:AA:73:E6:DF:F3:1B:CA:4D:00:75:07:AB"]
+      "package_name": "com.herokuapp.pwapk",
+      "sha256_cert_fingerprints": [
+        "3B:8A:B8:93:BA:9A:25:48:31:CD:95:90:1D:5F:80:89:D9:3D:C8:B6:A4:87:9C:A1:7C:AC:8C:31:94:C9:7F:DE"
+      ]
     }
   }
 ]
